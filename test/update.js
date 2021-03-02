@@ -7,7 +7,7 @@ describe('Update', async () => {
         dataSet = await connect()
     })
 
-    describe('No records available', async () => {
+    describe('Kayıt bulunamadı', async () => {
         it('returns zero as update count', async () => {
             assert.ok(0 == await dataSet.updateTest.update({ 'name': 'test' }))
         })
